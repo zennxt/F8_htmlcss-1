@@ -613,7 +613,6 @@ footer .desc {
 }
 
 .footer .social-link {
-    margin-right: 16px;
     display: flex;
     width: 28px;
     height: 28px;
@@ -621,6 +620,10 @@ footer .desc {
     justify-content: center;
     background: #f9f9f9;
     border-radius: 4px;
+}
+
+.footer .social-link + .social-link {
+    margin-right: 16px;
 }
 
 .footer .social-link:hover {
