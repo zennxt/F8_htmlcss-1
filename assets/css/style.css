@@ -52,15 +52,27 @@ a {
 }
 
 /* ======= Header ======= */
-.header {
+.header-sticky {
+    padding-top: 26px;
+    background: #e6f0ff;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
+
+.hero-wrap {
+    display: flex;
+    flex-direction: column;
+    position: relative;
     background: #e6f0ff;
     height: 100vh;
 }
 
 .navbar {
     display: flex;
+    /* padding-top: 38px; */
+    padding: 12px 0;
     align-items: center;
-    padding-top: 38px;
 }
 
 .navbar ul {
@@ -566,7 +578,7 @@ a {
 /* ======= Footer ======= */
 .footer {
     margin-top: 55px;
-    padding: 50 0 58;
+    padding: 50px 0 58px;
 }
 
 .footer .row {
@@ -623,11 +635,11 @@ footer .desc {
 }
 
 .footer .social-link + .social-link {
-    margin-right: 16px;
+    margin-left: 16px;
 }
 
 .footer .social-link:hover {
-    opacity: 0.8;
+    background: #e2dede;
 }
 
 .footer .row-bottom {
